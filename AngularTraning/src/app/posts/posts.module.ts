@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 import { EditorComponent } from './editor/editor.component';
 import { PostsComponent } from './posts/posts.component';
 import { PostComponent } from './post/post.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,RouterModule
   ],
   declarations: [EditorComponent, PostsComponent, PostComponent],
   exports: [EditorComponent, PostsComponent, PostComponent]
