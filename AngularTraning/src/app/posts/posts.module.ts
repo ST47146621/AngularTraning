@@ -4,10 +4,11 @@ import { EditorComponent } from './editor/editor.component';
 import { PostsComponent } from './posts/posts.component';
 import { PostComponent } from './post/post.component';
 import { RouterModule } from '@angular/router';
+import { PostsRoutingModule } from './/posts-routing.module';
 
 @NgModule({
   imports: [
-    CommonModule,RouterModule
+    CommonModule,RouterModule, PostsRoutingModule
   ],
   declarations: [EditorComponent, PostsComponent, PostComponent],
   exports: [EditorComponent, PostsComponent, PostComponent]

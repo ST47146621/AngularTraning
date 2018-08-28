@@ -10,25 +10,7 @@ const routes: Routes = [
   {
     path: '',
     component: MainComponent,
-    children: [
-      {
-        path: '',
-        redirectTo: 'posts',
-        pathMatch: 'full'
-      },
-      {
-        path: 'posts',
-        component: PostsComponent
-      },
-      {
-        path: 'post/:id',
-        component: PostComponent
-      },
-      {
-        path: 'create',
-        component: EditorComponent
-      }
-    ]
+    loadChildren: './posts/posts.module#PostsModule'
   },
   {
     path: 'login',
